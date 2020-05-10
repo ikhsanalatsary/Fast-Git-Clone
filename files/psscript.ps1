@@ -4,4 +4,4 @@ param(
 Set-Location $dirpath
 $url = Get-Clipboard
 Write-Output "Git url $url"
-git clone $url
+git clone $url --depth 1
